@@ -10,17 +10,18 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   int _Index = 0;
   final List<Widget> _BottomNavigationList = [
-    Container(
-      child: const Center(
+    const SizedBox(
+      child: Center(
         child: Text(
-          'Welcome \n to  \n Buy My Car \n App! \n \n go to the nest screen. ',
+          textAlign: TextAlign.center,
+          'Welcome \n to  \n Buy My Car App! \n \n Go to the next screen    \n \n\n Sponsored by IJB AUTOs.',
           style: TextStyle(
               fontSize: 30, color: Colors.black, fontWeight: FontWeight.bold),
         ),
       ),
     ),
-    Container(
-      child: const Center(
+    const SizedBox(
+      child: Center(
         child: Text(
           'A little step forward!',
           style: TextStyle(
@@ -28,16 +29,25 @@ class _BottomNavigationState extends State<BottomNavigation> {
         ),
       ),
     ),
-    Container(
-        child: const Center(
+    const SizedBox(
+        child: Center(
       child: Text(
-        'Transaction Status',
+        textAlign: TextAlign.center,
+        'Come buy car\n From \n \nIJB AUTOs.... \n \n Abi shey you wan collect?',
         style: TextStyle(
-            fontSize: 14, color: Colors.black, fontWeight: FontWeight.bold),
+            fontSize: 24, color: Colors.black, fontWeight: FontWeight.bold),
       ),
     )),
     const BuyCar(),
-    Container()
+    const SizedBox(
+        child: Center(
+      child: Text(
+        textAlign: TextAlign.center,
+        'Thank you \n For your continious\n Patronage! \n \n We hope to see you soon.',
+        style: TextStyle(
+            fontSize: 24, color: Colors.black, fontWeight: FontWeight.bold),
+      ),
+    )),
   ];
   @override
   Widget build(BuildContext context) {
